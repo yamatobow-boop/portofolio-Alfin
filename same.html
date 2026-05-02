@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuka Badminton Hall | Premium Court di Jakarta Barat</title>
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --primary: #10B981; /* Sporty Green */
+            --primary-dark: #3295f1;
+            --dark: #111827; /* Deep Black */
+            --light: #F9FAFB; /* Clean White */
+            --text-gray: #4B5563;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        a { text-decoration: none; }
+        
+        /* Typography */
+        h1, h2, h3 { font-weight: 800; text-transform: uppercase; letter-spacing: -0.5px; }
+        
+        /* Navbar */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; background: var(--dark); color: var(--light); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        .nav-links a { color: var(--light); margin-left: 1.5rem; font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        /* Hero Section */
+        .hero { height: 90vh; background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.9)), url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--light); padding: 0 5%; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--light); }
+        .hero h1 span { color: var(--primary); }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+        
+        /* Buttons */
+        .btn { padding: 1rem 2rem; font-size: 1.1rem; font-weight: bold; border-radius: 5px; cursor: pointer; transition: all 0.3s; display: inline-block; }
+        .btn-primary { background: var(--primary); color: var(--light); border: none; }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4); }
+        
+        /* Section Layout */
+        section { padding: 5rem 5%; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--dark); }
+        
+        /* Features / USP */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .feature-card { background: white; padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary); }
+        .feature-card h3 { margin: 1rem 0; color: var(--dark); }
+        
+        /* Booking Section */
+        .booking { background: var(--dark); color: var(--light); text-align: center; }
+        .booking .section-title { color: var(--light); }
+        .price-box { background: rgba(255,255,255,0.05); padding: 3rem; border-radius: 10px; max-width: 600px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.1); }
+        .price-box h3 { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; }
+        
+        /* Testimonials */
+        .testimonials { background: var(--light); }
+        .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testi-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-style: italic; }
+        .testi-author { margin-top: 1rem; font-weight: bold; color: var(--primary); font-style: normal; text-transform: uppercase; }
+
+        /* Footer & Contact */
+        footer { background: var(--dark); color: var(--light); padding: 3rem 5%; text-align: center; border-top: 4px solid var(--primary); }
+        .map-container { margin: 2rem 0; width: 100%; height: 300px; background: #ddd; border-radius: 10px; overflow: hidden; }
+        
+        /* Floating WA */
+        .floating-wa { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; padding: 15px 20px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; gap: 10px; transition: transform 0.3s; }
+        .floating-wa:hover { transform: scale(1.05); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; } /* Simplified for mobile mockup */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ASUKA HALL</div>
+        <div class="nav-links">
+            <a href="#fasilitas">Fasilitas</a>
+            <a href="#booking">Booking</a>
+            <a href="#komunitas">Komunitas</a>
+            <a href="#lokasi">Lokasi</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Main Badminton <span>Tanpa Ribet</span><br>Tinggal Datang & Main</h1>
+        <p>Arena premium di Jakarta Barat dengan 8 lapangan standar. Anti penuh, parkir luas, dan sistem booking secepat smash Anda.</p>
+        <a href="#booking" class="btn btn-primary">Cek Jadwal & Booking Sekarang</a>
+    </header>
+<section id="galeri">
+    <h2 class="section-title">Galeri Asuka badminton hall</h2>
+    <div class="gallery">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFTYLPa27Uq8ST5N4Tv6FK8vsChiyWdLncMw95p-6MZ2d-w6PNtebuw5sMEicsHrQopYkUx55d7LWSfQ6ZC9axxw6VktyQsUlUGaPTmhCWzxFHkBghVxZ67Vs_X9PLy6H8wlbAShA=s680-w680-h510-rw" alt="Badminton Court">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFgfdQ96j1F4ARAPGsv8QrzkuHnRt3E_gStzIW3gnCEXuJpAORbuyLgTg2d2wJKI4rrytgrsAeVr17PRy5yv6wP0Qo99fR0QCDhH2cVHi2nIYHdXAhWRCqmtaXMqL-wmNdXh7ixfYGd2oxQ=s680-w680-h510-rw" alt="Badminton Player">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHZdSt28gd_s09oevVso4Zt4vQykfzxUy9g_aVz28EjttPvQ1bLpwWzoun_SwAdTusjsJ_JkL157ZgttXe82Dc5LLpjEJeRGhOpyE3lqIF01D1uoSspB7ZolFhzQosk6Xt24SNWWM-8xA8m=s680-w680-h510-rw" alt="Badminton Players">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfOSlZ9kZqPoMto_MYqxQBH70iqj6EZxnmz7IUjEGXJjQUYO2VpERdGJdN6emTl4dvZqdGJHNI2WjxsdcVdHp8R4BETuG690JvgliJTR2u387tXdU86g0mUhD5FdBtIBzhgRMpxAO6wH8=s680-w680-h510-rw" alt="">
+    </div>
+</section>
+    <!-- USP / Features Section -->
+    <section id="fasilitas">
+        <h2 class="section-title">Kenapa Memilih Asuka?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>🏸 8 Court Standar</h3>
+                <p>Kapasitas besar memastikan Anda lebih mudah mendapatkan jadwal main, bahkan di jam sibuk (prime time).</p>
+            </div>
+            <div class="feature-card">
+                <h3>🚗 Parkir Luas & Aman</h3>
+                <p>Tidak perlu stres mencari parkir. Area parkir kami dirancang untuk menampung seluruh anggota komunitas Anda.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💡 Pencahayaan Optimal</h3>
+                <p>Lampu LED standar turnamen yang terang namun tidak menyilaukan mata saat melakukan overhead clear.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Conversion Section -->
+    <section id="booking" class="booking">
+        <h2 class="section-title">Mulai Main Hari Ini</h2>
+        <div class="price-box">
+            <h3>Mulai dari Rp XX.000 / Jam</h3>
+            <p style="margin-bottom: 2rem;">Tersedia paket Membership Bulanan & Harga Khusus Corporate.</p>
+            <button onclick="bookViaWA()" class="btn btn-primary">Booking Cepat via WhatsApp</button>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #9CA3AF;">Sistem terintegrasi. Admin membalas < 5 menit.</p>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="testimonials">
+        <h2 class="section-title">Apa Kata Komunitas?</h2>
+        <div class="testi-grid">
+            <div class="testi-card">
+                "Akhirnya nemu hall di Jakbar yang parkirannya nggak bikin emosi. Lapangannya karpetnya keset, enak buat gerak cepat."
+                <div class="testi-author">- Budi, PB Suka Smash</div>
+            </div>
+            <div class="testi-card">
+                "Sistem bookingnya jelas, nggak ada cerita double book. Tiap jumat rutin mabar kantor di Asuka."
+                <div class="testi-author">- Tim HR Tech Company</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="lokasi">
+        <h2>Asuka Badminton Hall</h2>
+        <p>Jakarta Barat, Indonesia</p>
+        <!-- Embedded Google Maps -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.3328221812543!2d106.7655976!3d-6.1634977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7d2534edd87%3A0x87ba0ef653fe024a!2sAsuka%20Badminton%20Hall!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p>&copy; 2026 Asuka Badminton Hall. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating WA CTA -->
+    <a href="#" onclick="bookViaWA()" class="floating-wa">
+        💬 Pesan Lapangan
+    </a>
+
+    <!-- Interactivity Script -->
+    <script>
+        function bookViaWA() {
+            // Ganti dengan nomor WA bisnis Asuka (gunakan format 62...)
+            const phoneNumber = "6281234567890"; 
+            
+            // Auto-filled message
+            const message = "Halo Admin Asuka Badminton Hall, saya tertarik untuk cek ketersediaan jadwal dan booking lapangan. Boleh minta info pricelist terbarunya?";
+            
+            // Encode the message for URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Redirect to WA API
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+        }
+    </script>
+</body>
+</html>
